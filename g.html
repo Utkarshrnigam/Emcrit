@@ -1,0 +1,17 @@
+<script>
+
+    
+navigator.geolocation.getCurrentPosition(function(location) {
+ var x = location.coords.latitude;
+  var y = location.coords.longitude;
+x = x.toFixed(6);
+    y = y.toFixed(6);
+    console.log(x);
+     
+   document.getElementById("h1").value=x;
+    document.getElementById("h2").value=y;
+    
+    document.getElementById("hp1").innerHTML="We Got You";
+});
+
+</script>
